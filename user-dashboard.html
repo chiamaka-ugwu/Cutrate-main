@@ -36,61 +36,126 @@
             </div>
             <div class="border"></div>
             <div class="links">
-                <li><a href="#" class="link">Check In Customers</a></li>
+                <li><a href="./index.html" class="link home">Home</a></li>
+                <li><a href="./aboutus.html" class="link">About Us</a></li>               
                 <li><a href="#" class="link">Log Out</a></li>
-                <li><i class="fa-solid fa-circle-user"></i><a href="#" class="link">Open View Hotels</a></li>
-                <li><a href="#" class="book">Add Rooms</a></li>
+                <li><i class="fa-solid fa-circle-user"></i><a href="#" class="link active">Hello Cutrate</a></li>
+                <li><a href="./book-now.html" class="book">Book Now</a></li>
             </div>
         </ul>
     </nav>
 
 
+            
+    
+    <!-- USER DASHBOARD -->
+    <div class="hotel-dashboard user-dashboard">
+        <article>
+            <div class="profile">
+                <p>H</p>
+            </div>
+            <div class="details">
+                <div class="details-text">
+                    <p><i class="fa-solid fa-circle-user"></i>Hello Cutrate</p>
+                    <p><i class="fa-solid fa-envelope"></i>hellocutrate@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>08012345678</p>
+                </div>
+                <a href="" class="book">Make a Complaint</a>  
+            </div>
+        </article>
+        <aside> 
+            <header>
+                <h1>Transaction Details</h1>
+                <img src="./images/arrow.png" alt="arrow">
+            </header>
+            <table>
+                <tr>
+                    <th>Ref ID</th>
+                    <th>Date</th>
+                    <th>Amount</th>
+                    <th>Status</th>
+                </tr>
+                <tr>
+                    <td>123D4FC56</td>
+                    <td>12-06-2022</td>
+                    <td>10,000NGN</td>
+                    <td style="color: #EB001B; font-weight: 700;">Pending</td>
+                </tr>
+                <tr>
+                    <td>123D4FC56</td>
+                    <td>12-06-2022</td>
+                    <td>10,000NGN</td>
+                    <td style="color: #369D40; font-weight: 700;">Successful</td>
+                </tr>
+                <tr>
+                    <td>123D4FC56</td>
+                    <td>12-06-2022</td>
+                    <td>10,000NGN</td>
+                    <td style="color: #0500EB; font-weight: 700;">Active</td>
+                </tr>
+                <tr>
+                    <td>123D4FC56</td>
+                    <td>12-06-2022</td>
+                    <td>10,000NGN</td>
+                    <td style="color: #EB001B; font-weight: 700;">Pending</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </aside>
+    </div>
 
-    <!-- ALL ROOMS -->
-    <div class="recommended">
+
+
+    <!-- BOOKING SUMMARY -->
+    <div class="hot-deals booking-summary">
         <header>
-            <h1>All Rooms</h1>
+            <h1>Booking Details</h1>
             <img src="./images/arrow.png" alt="arrow">
         </header>
         <article>
             <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="./activate.html" class="book">Activate</a>
+                <div class="image">
+                    <img src="./images/details.png" alt="details">
+                </div>
+                <div class="content">
+                    <h3>Booking Summary</h3>
+                    <div class="summary">
+                        <p>Description: <span>Room No 105</span></p>
+                        <p>Date: <span>01/06/2022</span></p>
+                        <p>Total: <span>10,000NGN</span></p>
+                    </div>
                 </div>
             </div>
             <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Deactivate</a>
+                <div class="image">
+                    <img src="./images/details.png" alt="details">
+                </div>   
+                <div class="content">
+                <h3>Booking Summary</h3>
+                <div class="summary">
+                    <p>Description: <span>Room No 105</span></p>
+                    <p>Date: <span>01/06/2022</span></p>
+                    <p>Total: <span>10,000NGN</span></p>
+                </div>
                 </div>
             </div>
             <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Activate</a>
+                <div class="image">
+                    <img src="./images/details.png" alt="details">
+                </div>                
+                <div class="content">
+                <h3>Booking Summary</h3>
+                <div class="summary">
+                    <p>Description: <span>Room No 105</span></p>
+                    <p>Date: <span>01/06/2022</span></p>
+                    <p>Total: <span>10,000NGN</span></p>
                 </div>
             </div>
-            <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Deactivate</a>
-                </div>
-            </div>
-            <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Activate</a>
-                </div>
-            </div>
-            <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Deactivate</a>
-                </div>
-            </div>
-            
-            
         </article>
     </div>
 
@@ -144,8 +209,7 @@
 
 
 
-
-
+    
     <script src="./script.js"></script>
 </body>
 </html>

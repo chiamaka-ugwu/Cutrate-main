@@ -17,6 +17,7 @@
     <script src="https://kit.fontawesome.com/ba375fe002.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./style.css">
+    
 
     <title>Cutrate</title>
 </head>
@@ -36,65 +37,76 @@
             </div>
             <div class="border"></div>
             <div class="links">
-                <li><a href="#" class="link">Check In Customers</a></li>
-                <li><a href="#" class="link">Log Out</a></li>
-                <li><i class="fa-solid fa-circle-user"></i><a href="#" class="link">Open View Hotels</a></li>
-                <li><a href="#" class="book">Add Rooms</a></li>
+                <li><a href="./index.html" class="active link home">Home</a></li>
+                <li><a href="./aboutus.html" class="link">About Us</a></li>
+                <li><a href="./log-in.html" class="link">Log In</a></li>
+                <li>
+                    <a class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" 
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Create Account
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="./create-account-user.html">
+                                User</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./create-account-hotel.html">
+                                Hotel</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li><a href="./book-now.html"><i class="fa-solid fa-magnifying-glass"
+                    style="color: #BD93ECCC;"></i></a>
+                </li>
+                <li><a href="./book-now.html" class="book">Book Now</a></li>
             </div>
         </ul>
     </nav>
 
-
-
-    <!-- ALL ROOMS -->
-    <div class="recommended">
-        <header>
-            <h1>All Rooms</h1>
-            <img src="./images/arrow.png" alt="arrow">
-        </header>
+    <div class="customer-invoice">
         <article>
-            <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="./activate.html" class="book">Activate</a>
-                </div>
+            <div class="box one">
+                <h1>Open View Hotel</h1>
+                <p><i class="fa-solid fa-location-dot"></i><a href="">No 14 East-West Road choba.</a></p>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto:cutrateng@gmail.com">cutrateng@gmail.com</a></p>
+                <p><i class="fa-solid fa-phone"></i><a href="tel:+">08012345678</a></p>
             </div>
-            <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Deactivate</a>
-                </div>
+            <div class="box two">
+              <p>ID: <span>210A47911</span></p>
             </div>
-            <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Activate</a>
-                </div>
-            </div>
-            <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Deactivate</a>
-                </div>
-            </div>
-            <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Activate</a>
-                </div>
-            </div>
-            <div class="box">
-                <img id="photo" src="./images/all-rooms.png">
-                <div class="content" style="margin-top: 2rem;">
-                    <a href="#" class="book">Deactivate</a>
-                </div>
-            </div>
-            
-            
         </article>
+        <aside>
+            <div class="box">
+                <header>
+                    <h1>Customer's Invoice</h1>
+                    <img src="./images/arrow.png" alt="arrow">
+                </header>
+                <p>Full Name: <span>Hello Cutrate</span></p>
+                <p>Gender: <span>Female</span></p>
+                <p>Phone: <span>08012345678</span></p>
+                <p>Email: <span>hellocutrate@gmail.com</span></p>
+                <div class="amount-status">
+                    <p>Amount <span>10,000NGN</span></p>
+                    <p>Payment Status: <span style="color: #369D40;">Successful</span></p>
+                </div>
+            </div>
+        </aside>
+        <section>
+            <div class="details">
+                <div class="details-text">
+                    <p>Room: Room 308</p>
+                    <p>Nights: 5 nights</p>
+                </div>
+                <a href="" class="book">Check In</a>
+            </div>
+            <div class="image">
+                <img src="./images/details-img.png" alt="room">
+            </div>
+        </section>
     </div>
-
-
+    
 
     <!-- footer -->
     <footer>
@@ -144,8 +156,7 @@
 
 
 
-
-
+    
     <script src="./script.js"></script>
 </body>
 </html>

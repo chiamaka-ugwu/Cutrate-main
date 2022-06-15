@@ -38,8 +38,8 @@
             <div class="links">
                 <li><a href="#check-in" data-bs-toggle="modal" data-bs-target="#exampleModal">Check In Customers</a></li>
                 <li><a href="#">Log Out</a></li>
-                <li><i class="fa-solid fa-circle-user"></i><a href="#">Open View Hotels</a></li>
-                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2">Add Rooms</a></li>
+                <li><i style="padding-top: 0.5rem;" class="fa-solid fa-circle-user"></i><a href="#">Open View Hotels</a></li>
+                <li><a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal2" class="book">Add Rooms</a></li>
             </div>
         </ul>
     </nav>
@@ -77,34 +77,61 @@
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                <form style="display: flex; flex-flow: column wrap;">
+                <form style="display: flex; flex-flow: column wrap;" class="modal-form">
                     <div class="main" style="text-align: center;">
-                        <label for="file" >
+                        <label class="label-file" for="file" >
                             Upload Image
+                            <i style="color: #BF9553; font-size: 1.3rem; margin-top: 0.5rem;" class="fa-solid fa-image"></i>
+                            <span class="imageName">hello.png</span>
                             <input type="file" name="file" id="file" class="inputTag">
                         </label>
                     </div>
                     <div class="others" style="display: flex;">
-                        <label for="file">
+                        <label class="label-file" for="file">
                             Upload Image
-                            <input  type="file" name="file" id="file" class="inputTag">
+                            <i style="color: #BF9553; font-size: 1.3rem; margin-top: 0.5rem;" class="fa-solid fa-image"></i>
                             <span class="imageName"></span>
-                        </label>
-                        <label for="file">
-                            Upload Image
                             <input type="file" name="file" id="file" class="inputTag">
-                            <span class="imageName"></span>
                         </label>
-                        <label for="file">
+                        <label class="label-file" for="file">
                             Upload Image
-                            <input type="file" name="file" id="file" class="inputTag">
+                            <i style="color: #BF9553; font-size: 1.3rem; margin-top: 0.5rem;" class="fa-solid fa-image"></i>
                             <span class="imageName"></span>
+                            <input type="file" name="file" id="file" class="inputTag">
+                        </label>
+                        <label class="label-file" for="file">
+                            Upload Image
+                            <i style="color: #BF9553; font-size: 1.3rem; margin-top: 0.5rem;" class="fa-solid fa-image"></i>
+                            <span class="imageName"></span>
+                            <input type="file" name="file" id="file" class="inputTag">
                         </label>
                     </div>
+                    <section>
+                        <div class="input-fields">
+                            <label for="room-number">Room Number</label>
+                            <input type="text" name="room-number" id="room-number">
+            
+                            <label for="category">Category</label>
+                            <input type="text" name="category" id="category">
+            
+                            <label for="price">Price</label>
+                            <input type="text" name="price" id="price">
+                        </div>
+
+                        <div class="input-fields2">
+                            <label for="room-size">Room Size</label>
+                            <input type="text" name="room-size" id="room-size">
+            
+                            <label for="amenities">Amenities</label>
+                            <input type="text" name="amenities" id="amenities">
+                        </div>
+                    </section>                    
                 </form>
             </div>
-            <div class="modal-footer" style="display: flex; justify-content: left;">
-                <input type="submit" value="Add Room" style="background-color: #BF9553; border: none; border-radius: 10px; padding: 10px 20px; color: #fff;">
+            <div class="modal-footer" style="display: flex; justify-content: center;">
+                <input type="submit" value="Add Room" 
+                style="border: none; border-radius: 10px; 
+                padding: 10px 200px; color: #fff;">
             </div>
         </div>
         </div>
@@ -198,6 +225,9 @@
                     <img src="./images/mastercard.png" alt="mastercard">
                 </div>
             </aside>
+        </div>
+        <div class="credits">
+            <p>©Cutrate Limited 2022. All rights reserved.</p>
         </div>
     </footer>
 

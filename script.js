@@ -81,16 +81,25 @@ togglePassword.addEventListener('click', function (e) {
 
 const box_one = document.getElementById("hide");
 const box_two = document.getElementById("show");
-const next = document.getElementsById("button");
+let next = document.getElementsById("buttonX");
 const back = document.getElementsById("back");
+
+// let currentAccount = 0;
+// showAccount(currentAccount);
+
+// function showAccount(i){
+//     let account = document.getElementsByClassName("account");
+
+// }
+
 
 next.addEventListener("click", function(){
     box_one.style.display = "none";
-    box_two.style.display = "block";
+    box_two.style.display = "block"; 
 })
 back.addEventListener("click", function(){
-    box_one.style.display = "block";
     box_two.style.display = "none";
+    box_one.style.display = "block";
 })
 
 
