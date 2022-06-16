@@ -93,25 +93,22 @@ const back = document.getElementsById("back");
 // }
 
 
-next.addEventListener("click", function(){
-    box_one.style.display = "none";
-    box_two.style.display = "block"; 
-})
-back.addEventListener("click", function(){
-    box_two.style.display = "none";
-    box_one.style.display = "block";
-})
+// next.addEventListener("click", function(){
+//     box_one.style.display = "none";
+//     box_two.style.display = "block"; 
+// })
+// back.addEventListener("click", function(){
+//     box_two.style.display = "none";
+//     box_one.style.display = "block";
+// })
 
 
 
 let input = document.getElementsByClassName("inputTag");
 let imageName = document.getElementsByClassName("imageName");
 
-for(i = 0; i < input.length; i++){
-    input[i].addEventListener("change", ()=>{
+    input.addEventListener("change", ()=>{
         let inputImage = document.querySelectorAll("input[type=file]").files[0];
-        for(j = 0; j < imageName.length; j++){
-            imageName[j].innerText = inputImage.name;
-        }
+        imageName.innerText = inputImage.name;
     })
-}
+

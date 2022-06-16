@@ -43,83 +43,44 @@
     <!-- navbar -->
     <nav id="nav">
       <div class="logo">
-        <a href="./index.html"><img src="./images/logo3.png" alt="logo" /></a>
+          <a href="./index.html"><img src="./images/logo3.png" alt="logo"></a>
       </div>
-      <svg
-        id="menu-icon"
-        style="width: 35px; fill: #bf9553; cursor: pointer"
-        class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv menu-icon"
-        focusable="false"
-        viewBox="0 0 24 24"
-        aria-hidden="true"
-        data-testid="MenuIcon"
-      >
-        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-      </svg>
+      <svg id="menu-icon" style="width: 35px; fill: #BF9553; cursor: pointer;" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv menu-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
       <a id="close" class="fa fa-close"></a>
 
       <ul id="dropdown">
-        <div class="logo2">
-          <img src="./images/logo3.png" alt="logo" />
-        </div>
-        <div class="border"></div>
-        <div class="links">
-          <li><a href="./index.html" class="active link home">Home</a></li>
-          <li><a href="./aboutus.html" class="link">About Us</a></li>
-          <li><a href="./log-in.html" class="link">Log In</a></li>
-          <li>
-            <a class="dropdown">
-              <a
-                class="btn btn-secondary dropdown-toggle active"
-                href="#"
-                role="button"
-                id="dropdownMenuLink"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Create Account
-              </a>
-
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./create-account-user.html"
-                    style="color: #66369d; text-align: center"
-                    >User</a
-                  >
-                </li>
-                <li>
-                  <a
-                    class="dropdown-item"
-                    href="./create-account-hotel.html"
-                    style="color: #66369d; text-align: center"
-                    >Hotel</a
-                  >
-                </li>
-              </ul>
-            </a>
-          </li>
-          <li>
-            <a href="./book-now.html"
-              ><i
-                class="fa-solid fa-magnifying-glass"
-                style="color: #bd93eccc"
-              ></i
-            ></a>
-          </li>
-          <li><a href="./book-now.html" class="book">Book Now</a></li>
-        </div>
+          <div class="logo2">
+              <img src="./images/logo3.png" alt="logo">
+          </div>
+          <div class="border"></div>
+          <div class="links">
+              <li><a href="./index.html" class="link home">Home</a></li>
+              <li><a href="./aboutus.html" class="link">About Us</a></li>
+              <li><a href="./log-in.html" class="link">Log In</a></li>
+              <li>
+                  <a class="dropdown">
+                    <a class="btn btn-secondary dropdown-toggle link active" href="#" role="button" 
+                    id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                        Create Account
+                    </a>
+                
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                        <li><a class="dropdown-item" href="./create-account-user.html">
+                            User</a>
+                        </li>
+                        <li><a class="dropdown-item" href="./create-account-hotel.html">
+                            Hotel</a>
+                        </li>
+                    </ul>
+                  </a>
+              </li>
+              <li><a href="./book-now.html"><i class="fa-solid fa-magnifying-glass"
+                  style="color: #BD93ECCC;"></i></a>
+              </li>
+              <li><a href="./book-now.html" class="book">Book Now</a></li>
+          </div>
       </ul>
-    </nav>
-
-    <!-- pop up -->
-    <div class="pop-up" id="pop-up" style="margin-top: 0">
-      <div class="box">
-        <a href="./create-account-user.html">User</a>
-        <a href="./create-account-hotel.html">Hotel</a>
-      </div>
-    </div>
+  </nav>
 
     <!-- create account -->
     <div class="create-account">
@@ -138,7 +99,7 @@
           <label for="phone">Phone Number</label>
           <input type="tel" name="phone" id="phone" />
 
-          <input type="button" id="buttonX" value="Next" />
+          <input type="button" id="buttonX" class="buttonX" value="Next" />
           <p>Already have an account? <a href="./log-in.html">Log in</a></p>
         </form>
       </div>
@@ -246,13 +207,11 @@
         $('#buttonX').click(function(){
             $("#hide").hide()
             $("#show").fadeIn()
-
         })
 
         $('#back').click(function(){
             $("#hide").fadeIn()
             $("#show").hide()
-
         })
       });
     </script>

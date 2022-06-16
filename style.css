@@ -54,7 +54,7 @@ nav #close{
 nav ul{
     float: right;
     position: relative;
-    margin-top: 1.3rem;
+    margin-top: 1rem;
     margin-right: 5rem;
 }
 nav ul .logo2{
@@ -70,7 +70,6 @@ nav li{
 nav ul li a{
     color: #66369D;
     text-decoration: none;
-    font-size: 1rem;
 }
 nav ul li a:hover{
     color: #BF9553;
@@ -83,6 +82,7 @@ nav ul li a.dropdown-toggle{
     background-color: transparent; 
     color: #66369D; 
     border: none;
+    margin-top: -0.2rem;
 }
 nav ul li a.dropdown-toggle:hover{
     text-decoration: underline;
@@ -94,9 +94,14 @@ nav ul li a.dropdown-toggle:focus{
     text-decoration: underline;
     color: #BF9553;
     background-color: transparent;
-
-    /* border: 1px solid #fff */
-    /* --bs-btn-active-border-color: #fff; */
+}
+nav ul li #dropdownMenuLink.active{
+    background-color: transparent;
+    color: #BF9553;
+    border: none;
+}
+nav ul li .btn:active{
+    border: none;
 }
 nav ul li a.dropdown-item{
     margin-top: -1rem;
@@ -799,13 +804,13 @@ footer .credits p{
     margin-left: -2rem;
     color: #BF9553;
 }
-.create-account .box form input#button, #submit{
+.create-account .box form input.buttonX, #submit{
     margin-top: 1rem;
     background-color: #BF9553;
     color: #fff;
     border: none;
 }
-.create-account .box form input#button:hover, input#submit:hover{
+.create-account .box form input.buttonX:hover, input#submit:hover{
     background-color: #7c5b26d3;
 }
 .create-account .box form input#file{
@@ -824,43 +829,15 @@ footer .credits p{
 }
 
 
-/* POP UP DESKTOP */
-.pop-up{
-    margin-top: 5rem;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    position: fixed;
-    display: none;
-}
-.pop-up .box{
-    width: 10%;
-    height: 6rem;
-    background-color: #fff;
-    margin-left: 65%;
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-    border-radius: 0 0 10px 10px;
-}
-.pop-up .box a{
-    color: #66369D;
-    margin-top: 1rem;
-    text-decoration: none;
-}
-.pop-up .box a:hover{
-    color: #BF9553;
-    text-decoration: underline;
-}
+/* LOG IN DESKTOP */
 .log-in{
     height: 95vh;
 }
 
 
-
 /* PAYMENT DESKTOP */
 .payment{
-    margin-top: 5rem;
+    margin-top: 3rem;
     height: auto;
 }
 .payment h1{
@@ -872,7 +849,7 @@ footer .credits p{
     background-color: #fff;
     margin: 0;
     align-items: unset;
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 .payment .card-options{
     margin-top: rem;
@@ -887,7 +864,7 @@ footer .credits p{
     margin: 0;
     align-items: unset;
     background: #66369d1a;
-    margin-top: -2rem;
+    margin-top: -1rem;
 }
 .payment #details{
     width: 70%;
@@ -966,7 +943,7 @@ form .group input{
 }
 
 
-/* HOTEL DASHBOARD */
+/* HOTEL DASHBOARD DESKTOP */
 ul i{
     color: #BF9553;
     font-size: 2rem;
@@ -1008,13 +985,13 @@ ul i{
 }
 
 
-/* CUSTOMERS */
+/* CUSTOMERS DESKTOP */
 .hotel-dashboard header{
     margin-bottom: 1rem;
 }
 
 
-/* ACTIVATE */
+/* ACTIVATE DESKTOP */
 .activate .box{
     width: 100%;
 }
@@ -1023,7 +1000,6 @@ ul i{
 }
 .activate .images img{
     width: 70%;
-
 }
 .activate .box .content{
     width: 30%;
@@ -1059,7 +1035,7 @@ ul i{
 }
 
 
-/* ADD ROOMS MODAL */
+/* ADD ROOMS MODAL DESKTOP*/
 .modal-lg{
     width: 50%;  
 }
@@ -1137,7 +1113,7 @@ ul i{
 
 
 
-/* CUSTOMER INVOICE */
+/* CUSTOMER INVOICE DESKTOP */
 .customer-invoice{
     width: 100%;
     margin-top: 6rem;
@@ -1173,7 +1149,7 @@ ul i{
 }
 .customer-invoice article .two p{
     color: #66369D;
-    font-weight: 600;
+    font-weight: 700;
     text-decoration: underline #BF9553;
     font-size: 1.25rem;
 }
@@ -1201,6 +1177,9 @@ ul i{
     border-radius: 10px;
     margin: 1.5rem 0 5rem 0;
 }
+
+
+/* HOTEL INVOICE DESKTOP */
 .customer-invoice section{
     width: 90%;
     margin: auto;
@@ -1212,20 +1191,23 @@ ul i{
     border-radius: 5px;
 }
 .customer-invoice section p{
-    font-weight: 600;
+    font-weight: 700;
     font-size: 1.25rem;
     line-height: 1.5rem;
 }
 .customer-invoice section .details a{
     padding: 10px 150px;
-    margin-top: 5rem;
 }
 .customer-invoice section .details-text{
     margin-top: 1rem;
     margin-bottom: 3rem;
 }
+.customer-invoice .mobile{
+    display: none;
+}
 
 
+/* USER DASHBOARD DESKTOP */
 .user-dashboard{
     display: flex;
 }
@@ -1251,8 +1233,9 @@ ul i{
     margin-right: 0.5rem;
     color: #BF9553;
 }
-.user-dashboard article .details p{
-    font-weight: 500;
+.user-dashboard article .details-text p{
+    font-weight: 600;
+    font-size: 1.1rem;
 }
 .user-dashboard article .details a{
     padding: 8px 60px;
@@ -1280,23 +1263,6 @@ ul i{
     font-weight: 600;
     margin-bottom: 0.5rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -1337,7 +1303,9 @@ ul i{
         padding-top: 0.3rem;
         margin-top: -2rem;
         top: 2rem;
-
+    }
+    nav ul .dropdown-menu{
+        height: fit-content;
     }
     nav ul .logo2{
         display: block;
@@ -1350,14 +1318,13 @@ ul i{
         /* display: block; */
         width: 100%;
         border-bottom: 1px solid #BF9553;
-        margin-top: 2px;
+        /* margin-top: 2px; */
     }
     nav ul li{
         display: block;
         margin-top: 1rem;
         margin-left: 0rem;
         margin-bottom: 1.5rem;
-
     }
     nav ul li a{
         font-size: 1.2rem;
@@ -1370,7 +1337,6 @@ ul i{
         margin-top: 2rem;
     }
     nav .book{
-        /* padding: 8px 30px; */
         padding: 5% 15% ;
         font-size: 1.2rem;
     }
@@ -1679,42 +1645,6 @@ ul i{
         font-size: 0.9rem;
     }
 
-    /* POP UP MOBILE */
-    .pop-up{
-        margin-top: 0;
-    }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     /* PAYMENT MOBILE */
     .payment{
@@ -1723,20 +1653,151 @@ ul i{
     }
     .payment .right{
         width: 100%;
+        text-align: center;
     }
     .payment #details{
         width: 100%;
     }
     .payment .summary{
         width: 100%;
-        
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
     }
     .payment .left{
         margin-top: 1rem;
     }
     .payment form{
         margin-top: 2rem;
+        width: 95%;
     }
+
+
+    /* HOTEL DASHBOARD MOBILE */
+    .hotel-dashboard{
+        margin: 9rem 0 5rem 0;
+    }
+    .hotel-dashboard article{
+        width: 100%;
+    }
+    .hotel-dashboard article .book{
+        padding: 10px 30px;
+    }
+    .hotel-dashboard table{
+        width: 100%;
+        
+    }
+    .hotel-dashboard th{
+        padding: 20px 5px;
+        font-size: 1rem;
+    }
+    .hotel-dashboard td{
+        padding: 20px 5px;
+        font-size: 1rem;
+    }
+
+
+    /* CUSTOMER INVOICE MOBILE */
+    .customer-invoice{
+        margin-top: 9rem;
+    }
+    .customer-invoice article{
+        width: 100%;
+        flex-flow: column-reverse wrap;
+        justify-content: unset;
+    }
+    .customer-invoice article .one{
+        padding: 20px;
+        border-radius: 10px;
+        
+    }
+    .customer-invoice article .one h1{
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    .customer-invoice article .one a{
+        font-weight: 700;
+    }
+    .customer-invoice article .two{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        justify-content: right;
+        margin-bottom: 1rem;
+    }
+    .customer-invoice article .two p{
+        font-size: 1.3rem;
+    }
+    .customer-invoice aside{
+        width: 100%;
+        margin-top: -3rem;
+    }
+    .customer-invoice aside .amount-status{
+        margin-top: 2rem;
+        padding: 20px 30px;
+    }
+
+
+    /* HOTEL INVOICE MOBILE */
+    .customer-invoice section{
+        width: 85%;
+        display: flex;
+        justify-content: unset;
+        padding: 30px 15px;
+    }
+    .customer-invoice section .details{
+        width: 60%;
+    }
+    .customer-invoice section .details-text{
+        margin-bottom: 2rem;
+    }
+    .customer-invoice section .details a{
+        padding: 10px 40px;
+    }
+    .customer-invoice section .image{
+        width: 40%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .customer-invoice section .image img{
+        width: 100%;
+    }
+    .customer-invoice .desktop{
+        display: none;
+    }
+    .customer-invoice .mobile{
+        display: block;
+    }
+
+
+    /* USER DASHBOARD DESKTOP */
+    .user-dashboard{
+        flex-flow: column wrap;
+    }
+    .user-dashboard article{
+        width: 90%;
+        margin: auto;
+    }
+    .user-dashboard aside{
+        width: 100%;
+        margin-right: 0;
+        margin-top: 0rem;
+    }
+    .user-dashboard aside table{
+        width: 90%;
+        margin: auto;
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 

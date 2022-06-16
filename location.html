@@ -35,11 +35,29 @@
             </div>
             <div class="border"></div>
             <div class="links">
-                <li><a href="./index.html" class="link home">Home</a></li>
+                <li><a href="./index.html" class="active link home">Home</a></li>
                 <li><a href="./aboutus.html" class="link">About Us</a></li>
                 <li><a href="./log-in.html" class="link">Log In</a></li>
-                <li><a href="./create-account.html" class="create link">Create Account</a></li>
-                <li><a href="./book-now.html"><img src="./images/bx_search.png" alt="search"></a></li>
+                <li>
+                    <a class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" 
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Create Account
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="./create-account-user.html">
+                                User</a>
+                            </li>
+                            <li><a class="dropdown-item" href="./create-account-hotel.html">
+                                Hotel</a>
+                            </li>
+                        </ul>
+                    </a>
+                </li>
+                <li><a href="./book-now.html"><i class="fa-solid fa-magnifying-glass"
+                    style="color: #BD93ECCC;"></i></a>
+                </li>
                 <li><a href="./book-now.html" class="book">Book Now</a></li>
             </div>
         </ul>
