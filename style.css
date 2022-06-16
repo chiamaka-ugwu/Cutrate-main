@@ -211,9 +211,10 @@ article .box p{
 
 /* CAROUSEL DESKTOP */
 .carousel{
-    width: 35%;
-    margin: auto;
     margin-top: 3rem;
+}
+.carousel img{
+    height: 70vh;
 }
 
 
