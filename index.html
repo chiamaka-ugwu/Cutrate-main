@@ -16,6 +16,9 @@
 
     <script src="https://kit.fontawesome.com/ba375fe002.js" crossorigin="anonymous"></script>
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    
+    
     <link rel="stylesheet" href="./style.css">
     
 
@@ -29,7 +32,7 @@
             <a href="./index.html"><img src="./images/logo3.png" alt="logo"></a>
         </div>
         <svg id="menu-icon" style="width: 35px; fill: #BF9553; cursor: pointer;" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv menu-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
-        <a id="close" class="fa fa-close"></a>
+        <i id="close" class="fa fa-close"></i>
 
         <ul id="dropdown">
             <div class="logo2">
@@ -88,7 +91,7 @@
         </header>
         <article>
             <div class="box">
-                <img class="image" src="./images/pic1.png">
+                <img class="image" src="./images/pic1.png" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div class="content">
                     <h3>Open View Hotel</h3>
                     <img src="./images/3star.png">
@@ -97,7 +100,7 @@
                 </div>
             </div>
             <div class="box">
-                <img class="image" src="./images/pic2.png">
+                <img class="image" src="./images/pic2.png" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div class="content">
                     <h3>Emerald Hotel</h3>
                     <img src="./images/5star.png">
@@ -106,7 +109,7 @@
                 </div>
             </div>
             <div class="box">
-                <img class="image" src="./images/pic3.png">
+                <img class="image" src="./images/pic3.png" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div class="content">
                     <h3>Joy Land Hotel</h3>
                     <img src="./images/4star.png">
@@ -117,6 +120,27 @@
         </article>
     </div>
 
+
+
+
+    <!-- MODAL IMAGE -->
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 style="color: #66369D" class="modal-title" id="exampleModalLabel">Open View Hotel</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body" style="display: flex; justify-content: center;">
+                <img class="image" src="./images/pic1.png" style="width: 100%;">
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content: center;">
+                <a href="./book-now.html" class="book">Book Now</a>
+            </div>
+        </div>
+        </div>
+    </div>
 
 
     <!-- carousel -->
@@ -153,7 +177,7 @@
         </header>
         <article>
             <div class="box">
-                <img class="image" src="./images/pic4.png">
+                <img class="image" src="./images/pic4.png" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div class="content">
                     <h3>Open View Hotel</h3>
                     <img src="./images/3star.png">
@@ -162,7 +186,7 @@
                 </div>
             </div>
             <div class="box">
-                <img class="image" src="./images/pic5.png">
+                <img class="image" src="./images/pic5.png" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div class="content">
                     <h3>Open View Hotel</h3>
                     <img src="./images/3star.png">
@@ -171,7 +195,7 @@
                 </div>
             </div>
             <div class="box">
-                <img class="image" src="./images/pic6.png">
+                <img class="image" src="./images/pic6.png" data-bs-toggle="modal" data-bs-target="#exampleModal">
                 <div class="content">
                     <h3>Open View Hotel</h3>
                     <img src="./images/3star.png">
@@ -192,8 +216,8 @@
             <img src="./images/arrow.png" alt="arrow">
             <h3>What People Say About Us</h3>
         </header>
-        <article>
-            <div class="box">
+        <article class="owl-carousel">
+            <div class="box item">
                 <aside>
                     <img class="picture" src="./images/pic6.png" alt="image">
                     <h4>Lorem Ipsum</h4>
@@ -201,7 +225,7 @@
                 </aside>
                 <p>For your comfort at affordable prices, Cutrate is your one-stop.</p>
             </div>
-            <div class="box two">
+            <div class="box two item">
                 <aside>
                     <img class="picture" src="./images/pic6.png" alt="image">
                     <h4>Lorem Ipsum</h4>
@@ -209,7 +233,7 @@
                 </aside>
                 <p>For your comfort at affordable prices, Cutrate is your one-stop.</p>
             </div>
-            <div class="box three">
+            <div class="box three item">
                 <aside>
                     <img class="picture" src="./images/pic6.png" alt="image">
                     <h4>Lorem Ipsum</h4>
@@ -219,6 +243,7 @@
             </div>
         </article>
     </div>
+
 
 
 
@@ -287,5 +312,34 @@
 
     
     <script src="./script.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+        $('.owl-carousel').owlCarousel({
+            loop:true,
+            margin:10,
+            nav:false,
+            autoplay:true,
+            autoplayTimeout:4000,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1
+                },
+                600:{
+                    items:2
+                },
+                1000:{
+                    items:3
+                }
+            }
+        });
+    </script>
+
+
+
+
 </body>
 </html>

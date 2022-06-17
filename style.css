@@ -16,7 +16,9 @@ html{
 ::-webkit-scrollbar-track {
     background: #f8f8f8;
 }
-
+img{
+    cursor: pointer;
+}
 @font-face{
     font-family: Californian FB;
     src: url(./fonts/CALIFB.TTF);
@@ -54,7 +56,7 @@ nav #close{
 nav ul{
     float: right;
     position: relative;
-    margin-top: 1rem;
+    margin-top: 1.2rem;
     margin-right: 5rem;
 }
 nav ul .logo2{
@@ -112,6 +114,9 @@ nav ul li a.dropdown-item:hover{
     background-color: #BF9553;
     color: #fff;
 }
+nav i:hover{
+    color: #BF9553;
+}
 .book{
     padding: 10px 40px;
     border-radius: 5px;
@@ -128,6 +133,13 @@ nav ul li a.dropdown-item:hover{
 .book.active{
     color: #fff;
 }
+
+.btn-check:active+.btn, .btn-check:checked+.btn, .btn.active, .btn.show, .btn:active {
+    color: #66369D;
+    background-color: transparent;
+    border-color: #fff;
+}
+
 
 
 /* HERO DESKTOP */
@@ -581,7 +593,7 @@ footer .credits p{
     background-image: url(./images/bookimg.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 4.5rem;
+    margin-top: 3rem;
     display: flex;
     align-items: center;
     flex-flow: column wrap;
@@ -1274,7 +1286,7 @@ ul i{
     nav{
         height: 14vh;
         border-bottom: 1px solid #BF9553;
-        z-index: 10;
+        z-index: 1000000;
     }
     nav .logo img{
         margin-top: 0.3rem;
@@ -1318,7 +1330,7 @@ ul i{
     nav ul .border{
         /* display: block; */
         width: 100%;
-        border-bottom: 1px solid #BF9553;
+        /* border-bottom: 1px solid #BF9553; */
         /* margin-top: 2px; */
     }
     nav ul li{
@@ -1341,7 +1353,10 @@ ul i{
         padding: 5% 15% ;
         font-size: 1.2rem;
     }
-
+    nav ul li #dropdownMenuLink{
+        font-size: 1.2rem;
+        margin-left: -0.8rem;
+    }
 
 
     /* HERO MOBILE */
@@ -1349,6 +1364,13 @@ ul i{
         height: 86vh;
         background-image: url(./images/hero-mobile.png);
         margin-top: 14vh;
+    }
+    .hero #blur{
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        margin-top: 14vh;
+        z-index: 1000;
     }
     .hero .text h2{
         font-size: 2rem;
@@ -1423,9 +1445,17 @@ ul i{
     .testimonial article{
         margin-top: 2rem;
     }
-    .testimonial .two, .testimonial .three{
-        display: none;
+    .testimonial article .box aside h4{
+        margin: 1rem 0 0 0.5rem;
     }
+    .testimonial article .box aside .quotes{
+        margin-left: 0;
+        right: 0;
+        position: absolute;
+    }
+
+
+
 
     /* NEWSLETTER MOBILE */
     .newsletter header h3{
@@ -1675,6 +1705,12 @@ ul i{
 
 
     /* HOTEL DASHBOARD MOBILE */
+    .hotel-nav{
+        width: 70%;
+    }
+    .hotel-name{
+        margin-bottom: 2.5rem;
+    }
     .hotel-dashboard{
         margin: 9rem 0 5rem 0;
     }
@@ -1685,8 +1721,8 @@ ul i{
         padding: 10px 30px;
     }
     .hotel-dashboard table{
-        width: 100%;
-        
+        width: 90%;
+        margin: auto;
     }
     .hotel-dashboard th{
         padding: 20px 5px;
@@ -1696,6 +1732,14 @@ ul i{
         padding: 20px 5px;
         font-size: 1rem;
     }
+    .modal-lg{
+        width: 95%;
+    }
+    .check-dialog{
+        margin-top: 10rem;
+    }
+
+
 
 
     /* CUSTOMER INVOICE MOBILE */

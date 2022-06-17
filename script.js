@@ -12,11 +12,11 @@ var pop_up = document.getElementById("pop-up");
 menuIcon.addEventListener("click", function(){    
     dropDown.style.display = "block";
     menuIcon.style.display = "none";
-    close.style.display = "block"
-    blur.style.backgroundColor = "rgba(0, 0, 0, 0.5)";
-    blur.style.zIndex = "100";
-    nav.style.backgroundColor = "rgba(0, 0, 0, 0.2)";
-    nav.style.zIndex = "100000";
+    close.style.display = "block";
+    blur.style.backgroundColor = "rgba(0, 0, 0, 0.18)";
+    nav.style.backgroundColor = "rgba(0, 0, 0, 0.18)";
+    nav.style.borderBottom = "1px solid rgba(0, 0, 0, 0.01)";
+
 })
 
 
@@ -24,11 +24,9 @@ close.addEventListener("click", function(){
     dropDown.style.display = "none";
     menuIcon.style.display = "block";
     close.style.display = "none"
-    blur.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
-    blur.style.zIndex = "1";
+    blur.style.backgroundColor = "transparent";
     nav.style.backgroundColor = "#fff";
-    nav.style.zIndex = "1000000";
-
+    nav.style.borderBottom = "1px solid #BF9553";
 })
 
 
@@ -39,11 +37,9 @@ if(x.matches){
             dropDown.style.display = "none";
             menuIcon.style.display = "block";
             close.style.display = "none"
-            blur.style.backgroundColor = "rgba(50, 12, 94, 0.2)";
-            blur.style.zIndex = "1";
+            blur.style.backgroundColor = "transparent";
             nav.style.backgroundColor = "#fff";
-            nav.style.zIndex = "1000000";
-            
+            nav.style.borderBottom = "1px solid #BF9553";      
         }
     }
 }
@@ -83,25 +79,6 @@ const box_one = document.getElementById("hide");
 const box_two = document.getElementById("show");
 let next = document.getElementsById("buttonX");
 const back = document.getElementsById("back");
-
-// let currentAccount = 0;
-// showAccount(currentAccount);
-
-// function showAccount(i){
-//     let account = document.getElementsByClassName("account");
-
-// }
-
-
-// next.addEventListener("click", function(){
-//     box_one.style.display = "none";
-//     box_two.style.display = "block"; 
-// })
-// back.addEventListener("click", function(){
-//     box_two.style.display = "none";
-//     box_one.style.display = "block";
-// })
-
 
 
 let input = document.getElementsByClassName("inputTag");
