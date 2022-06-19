@@ -593,7 +593,6 @@ footer .credits p{
     background-image: url(./images/bookimg.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    margin-top: 3rem;
     display: flex;
     align-items: center;
     flex-flow: column wrap;
@@ -610,7 +609,7 @@ footer .credits p{
     padding-left: 35px;
     outline: none;
     color: #66369D;
-    margin-top: 9rem;
+    margin-top: 10rem;
 }
 .book-now input::placeholder{
     color: rgba(189, 147, 236, 0.8);
@@ -657,7 +656,7 @@ footer .credits p{
 
 /* LOCATION DESKTOP */
 .location{
-    margin: 2rem 0;
+    margin: 0 0 2rem 0;
 }
 .location .box{
     width: 100%;
@@ -1365,11 +1364,10 @@ ul i{
         background-image: url(./images/hero-mobile.png);
         margin-top: 14vh;
     }
-    .hero #blur{
+    #blur{
         width: 100%;
         height: 100vh;
         position: fixed;
-        margin-top: 14vh;
         z-index: 1000;
     }
     .hero .text h2{
@@ -1512,7 +1510,8 @@ ul i{
     /* ABOUT MOBILE */
     .about-us{
         flex-flow: column-reverse wrap;
-        margin-top: 7rem;
+        margin-top: 5.8rem;
+
     }
     .about-us .left{
         width: 100%;
@@ -1577,29 +1576,36 @@ ul i{
     /*  CONTACT MOBILE */
     .contact{
         height: auto;
-        padding-top: 0;
+        padding-top: 5.5rem;
         padding-bottom: 0;
         margin-bottom: 2rem;
+        background: #fff;
     }
     .background{
         flex-flow: column wrap;
     }
     .contact .box{
-        width: 80%;
+        width: 85%;
+    }
+    .contact .box p{
+        width: 100%;
+        font-size: 1.1rem;
     }
 
 
     /* BOOK NOW MOBILE */
     .book-now{
         background-image: url(./images/book-mobile.png);
+        /* height: 40vh; */
     }
     .book-now input{
-        width: 80%;
-        margin-top: 8rem;
+        width: 90%;
+        /* margin-top: 2rem; */
     }
     .book-now a{
         padding: 8px 10px;
         margin-left: 0;
+        margin-top: 1rem;
     }
     .hotels .box{
         flex-flow: column wrap;
@@ -1618,11 +1624,16 @@ ul i{
 
 
     /* LOCATION MOBILE */
+    .location1{
+        /* margin-top: 5.8rem; */
+    }
     .location .box a{
         margin: 0 0 0 1rem;
         font-size: 1.1rem;
     }
-
+    .location-input{
+        margin-top: 12rem;
+    }
 
     /* DESCRIPTION DESKTOP */
     .desc{
@@ -1669,6 +1680,9 @@ ul i{
 
 
     /* CREATE ACCOUNT MOBILE */
+    .create-account{
+        margin-top: 5.8rem;
+    }
     .create-account .box{
         width: 90%;
     }
@@ -1738,7 +1752,15 @@ ul i{
     .check-dialog{
         margin-top: 10rem;
     }
-
+    .customers table{
+        width: 100%;
+    }
+    .customers th{
+        padding: 20px 0;
+    }
+    .customers td{
+        padding: 20px 0;
+    }
 
 
 
