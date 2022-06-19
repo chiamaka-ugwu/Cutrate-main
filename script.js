@@ -13,10 +13,10 @@ menuIcon.addEventListener("click", function(){
     dropDown.style.display = "block";
     menuIcon.style.display = "none";
     close.style.display = "block";
-    blur.style.backgroundColor = "rgba(0, 0, 0, 0.18)";
-    nav.style.backgroundColor = "rgba(0, 0, 0, 0.18)";
+    close.style.zIndex = "900000000000000";
+    blur.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+    nav.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
     nav.style.borderBottom = "1px solid rgba(0, 0, 0, 0.01)";
-
 })
 
 
@@ -30,19 +30,19 @@ close.addEventListener("click", function(){
 })
 
 
-const x = window.matchMedia("(max-width: 1000px)");
-if(x.matches){
-    document.onclick = function(e){
-        if(e.target.id !== "dropdown" && e.target.id !== "menu-icon"){
-            dropDown.style.display = "none";
-            menuIcon.style.display = "block";
-            close.style.display = "none"
-            blur.style.backgroundColor = "transparent";
-            nav.style.backgroundColor = "#fff";
-            nav.style.borderBottom = "1px solid #BF9553";      
-        }
-    }
-}
+// const x = window.matchMedia("(max-width: 1000px)");
+// if(x.matches){
+//     document.onclick = function(e){
+//         if(e.target.id !== "dropdown" && e.target.id !== "menu-icon"){
+//             dropDown.style.display = "none";
+//             menuIcon.style.display = "block";
+//             close.style.display = "none"
+//             blur.style.backgroundColor = "transparent";
+//             nav.style.backgroundColor = "#fff";
+//             nav.style.borderBottom = "1px solid #BF9553";      
+//         }
+//     }
+// }
 
 
 const active = window.matchMedia("(max-width: 2000px)");
