@@ -22,6 +22,9 @@
 </head>
 <body>
 
+    <div id="blur"></div>
+
+
     <!-- navbar -->
     <nav id="nav">
         <div class="logo">
@@ -81,10 +84,16 @@
                 <input type="tel" name="phone" id="phone">
 
                 <label for="password">Password</label>
-                <input type="password" name="password" id="password">
+                <div class="password">
+                    <input type="password" name="password" id="password" />
+                    <i class="fa-solid fa-eye togglePassword" id="togglePassword"></i>
+                </div>
 
                 <label for="confirm-password">Confirm Password</label>
-                <input type="password" name="confirm-password" id="confirm-password">
+                <div class="password">
+                    <input type="password" name="password" id="password2" />
+                    <i class="fa-solid fa-eye togglePassword" id="togglePassword"></i>
+                </div>
 
                 <input type="button" id="create-account-button" class="buttonX" value="Create Account">
                 <p>Already have an account? <a href="./log-in.html">Log in</a></p>

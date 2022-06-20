@@ -23,6 +23,8 @@
 </head>
 <body>
 
+    <div id="blur"></div>
+
     <!-- navbar -->
     <nav id="nav">
         <div class="logo">
@@ -31,19 +33,113 @@
         <svg id="menu-icon" style="width: 35px; fill: #BF9553; cursor: pointer;" class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium css-vubbuv menu-icon" focusable="false" viewBox="0 0 24 24" aria-hidden="true" data-testid="MenuIcon"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
         <i id="close" class="fa fa-close"></i>
 
-        <ul id="dropdown">
+        <ul id="dropdown" class="hotel-nav">
             <div class="logo2">
                 <a href="./index.html"><img src="./images/logo3.png" alt="logo"></a>   
             </div>
             <div class="border"></div>
             <div class="links">
-                <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal" class="link">Check In Customers</a></li>
+                <li><a href="" data-bs-toggle="modal" data-bs-target="#exampleModal">Check In Customers</a></li>
                 <li><a href="./log-in.html" class="link">Log Out</a></li>
-                <li><i class="fa-solid fa-circle-user"></i><a href="#" class="link">Open View Hotels</a></li>
+                <li class="hotel-name"><i class="fa-solid fa-circle-user"></i><a href="#" class="link">Open View Hotels</a></li>
                 <li><a data-bs-toggle="modal" data-bs-target="#exampleModal2" class="book">Add Rooms</a></li>
             </div>
         </ul>
     </nav>
+
+
+
+    <!-- CHECK IN MODAL -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog check-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 style="color: #66369D" class="modal-title" id="exampleModalLabel">Check In Customers</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form style="display: flex; flex-flow: column wrap;" action="#">
+                    <label for="invoice" style="margin-bottom: 0.5rem; ">Invoice ID</label>
+                    <input type="text" name="invoice" id="invoice"  style="border: 1px solid #66369D; padding: 10px; border-radius: 10px; outline: none;">
+                </form>
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content: left;">
+                <input type="submit" value="Check-In" style="background-color: #BF9553; border: none; border-radius: 10px; padding: 10px 20px; color: #fff;">
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+    <!-- ADD ROOMS MODAL -->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 style="color: #66369D" class="modal-title" id="exampleModalLabel">Add Rooms</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <form style="display: flex; flex-flow: column wrap;" class="modal-form">
+                    <div class="main" style="text-align: center;">
+                        <label class="label-file" for="file" >
+                            Upload Image
+                            <i style="color: #BF9553; font-size: 1.3rem; margin-top: 0.5rem;" class="fa-solid fa-image"></i>
+                            <span class="imageName">hello.png</span>
+                            <input type="file" name="file" id="file" class="inputTag">
+                        </label>
+                    </div>
+                    <div class="others" style="display: flex;">
+                        <label class="label-file" for="file">
+                            Upload Image
+                            <i style="color: #BF9553; font-size: 1.3rem; margin-top: 0.5rem;" class="fa-solid fa-image"></i>
+                            <span class="imageName"></span>
+                            <input type="file" name="file" id="file" class="inputTag">
+                        </label>
+                        <label class="label-file" for="file">
+                            Upload Image
+                            <i style="color: #BF9553; font-size: 1.3rem; margin-top: 0.5rem;" class="fa-solid fa-image"></i>
+                            <span class="imageName"></span>
+                            <input type="file" name="file" id="file" class="inputTag">
+                        </label>
+                        <label class="label-file" for="file">
+                            Upload Image
+                            <i style="color: #BF9553; font-size: 1.3rem; margin-top: 0.5rem;" class="fa-solid fa-image"></i>
+                            <span class="imageName"></span>
+                            <input type="file" name="file" id="file" class="inputTag">
+                        </label>
+                    </div>
+                    <section>
+                        <div class="input-fields">
+                            <label for="room-number">Room Number</label>
+                            <input type="text" name="room-number" id="room-number">
+            
+                            <label for="category">Category</label>
+                            <input type="text" name="category" id="category">
+            
+                            <label for="price">Price</label>
+                            <input type="text" name="price" id="price">
+                        </div>
+
+                        <div class="input-fields2">
+                            <label for="room-size">Room Size</label>
+                            <input type="text" name="room-size" id="room-size">
+            
+                            <label for="amenities">Amenities</label>
+                            <input type="text" name="amenities" id="amenities">
+                        </div>
+                    </section>                    
+                </form>
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content: center;">
+                <input type="submit" value="Add Room" 
+                style="border: none; border-radius: 10px; 
+                padding: 10px 200px; color: #fff;">
+            </div>
+        </div>
+        </div>
+    </div>
+
 
 
 

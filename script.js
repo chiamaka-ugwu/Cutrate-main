@@ -13,7 +13,7 @@ menuIcon.addEventListener("click", function(){
     dropDown.style.display = "block";
     menuIcon.style.display = "none";
     close.style.display = "block";
-    blur.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
+    blur.style.display = "block";
     nav.style.backgroundColor = "rgba(0, 0, 0, 0.3)";
     nav.style.borderBottom = "1px solid rgba(0, 0, 0, 0.01)";
 })
@@ -23,7 +23,7 @@ close.addEventListener("click", function(){
     dropDown.style.display = "none";
     menuIcon.style.display = "block";
     close.style.display = "none"
-    blur.style.backgroundColor = "transparent";
+    blur.style.display = "none";
     nav.style.backgroundColor = "#fff";
     nav.style.borderBottom = "1px solid #BF9553";
 })
@@ -36,7 +36,7 @@ if(x.matches){
             dropDown.style.display = "none";
             menuIcon.style.display = "block";
             close.style.display = "none"
-            blur.style.backgroundColor = "transparent";
+            blur.style.display = "none";
             nav.style.backgroundColor = "#fff";
             nav.style.borderBottom = "1px solid #BF9553";      
         }
@@ -62,15 +62,37 @@ create.addEventListener("click", function(){
 })
 
 
-const togglePassword = document.querySelector('.togglePassword');
-const password = document.querySelector('#password');
+// const togglePassword = document.getElementById('togglePassword');
+// const password = document.getElementById('password');
+ 
+// togglePassword.addEventListener('click', function (e) {
+//     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+//     password.setAttribute('type', type);
+//     this.classList.toggle('fa-eye-slash');        
+
+// });
+
+// const togglePassword = document.querySelector("#togglePassword");
+// const password = document.querySelector("#password");
+
+
+// togglePassword.addEventListener('click', function () {
+//     // toggle the type attribute
+//     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+//     password.setAttribute('type', type);
+//     // toggle the eye / eye slash icon
+//     this.classList.toggle('fa-eye');
+// });
+
+const togglePassword = document.getElementById('togglePassword');
+const password = document.getElementById('password');
  
 togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
     password.setAttribute('type', type);
-
-    this.classList.toggle('fa-eye-slash');        
-
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
 });
 
 
@@ -80,11 +102,11 @@ let next = document.getElementsById("buttonX");
 const back = document.getElementsById("back");
 
 
-let input = document.getElementsByClassName("inputTag");
-let imageName = document.getElementsByClassName("imageName");
+// let input = document.getElementsByClassName("inputTag");
+// let imageName = document.getElementsByClassName("imageName");
 
-    input.addEventListener("change", ()=>{
-        let inputImage = document.querySelectorAll("input[type=file]").files[0];
-        imageName.innerText = inputImage.name;
-    })
+//     input.addEventListener("change", ()=>{
+//         let inputImage = document.querySelectorAll("input[type=file]").files[0];
+//         imageName.innerText = inputImage.name;
+//     })
 
