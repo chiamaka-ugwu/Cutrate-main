@@ -1285,7 +1285,7 @@ ul i{
 /* NAV MOBILE */
 @media screen and (max-width:1000px){
     nav{
-        height: 14vh;
+        height: 13vh;
         border-bottom: 1px solid #BF9553;
         z-index: 1000000;
     }
@@ -1323,7 +1323,7 @@ ul i{
     }
     nav ul .logo2{
         display: block;
-        height: 5.5rem;
+        height: 5rem;
     }
     nav ul .logo2 img{
         width: 60px;
@@ -1359,9 +1359,9 @@ ul i{
 
     /* HERO MOBILE */
     .hero{
-        height: 86vh;
+        height: 87vh;
         background-image: url(./images/hero-mobile.png);
-        margin-top: 14vh;
+        margin-top: 13vh;
     }
     #blur{
         display: none;
@@ -1511,7 +1511,7 @@ ul i{
     /* ABOUT MOBILE */
     .about-us{
         flex-flow: column-reverse wrap;
-        margin-top: 5.8rem;
+        margin-top: 5.45rem;
     }
     .about-us .left{
         width: 100%;
@@ -1597,9 +1597,10 @@ ul i{
     /* BOOK NOW MOBILE */
     .book-now{
         background-image: url(./images/book-mobile.png);
+        /* margin-top: 5.45rem; */
     }
     .book-now input{
-        width: 90%;
+        width: 85%;
     }
     .book-now a{
         padding: 8px 10px;
@@ -1677,7 +1678,7 @@ ul i{
 
     /* CREATE ACCOUNT MOBILE */
     .create-account{
-        margin-top: 5.8rem;
+        margin-top: 5.45rem;
     }
     .create-account .box{
         width: 90%;
@@ -1722,7 +1723,7 @@ ul i{
         margin-bottom: 2.5rem;
     }
     .hotel-dashboard{
-        margin: 5.8rem 0 5rem 0;
+        margin: 5.45rem 0 5rem 0;
         padding-top: 3.2rem;
     }
     .hotel-dashboard article{
@@ -1745,14 +1746,17 @@ ul i{
     }
     .modal-lg{
         width: 95%;
-        margin-top: 6rem;
+        margin-top: 7rem;
 
     }
     .check-dialog{
         margin-top: 10rem;
     }
+    .customers{
+        margin-top: 0rem;
+    }
     .customers table{
-        width: 100%;
+        width: 90%;
     }
     .customers th{
         padding: 20px 0;

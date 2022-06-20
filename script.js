@@ -110,3 +110,9 @@ const back = document.getElementsById("back");
 //         imageName.innerText = inputImage.name;
 //     })
 
+
+document.querySelectorAll(".image-container img").forEach(image => {
+    image.onclick = () => {
+
+    }
+})
