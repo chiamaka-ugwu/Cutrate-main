@@ -6,8 +6,6 @@ var nav = document.getElementById("nav");
 var links = document.querySelectorAll(".link");
 var text = document.getElementById("text");
 var hero = document.getElementById("hero");
-var create = document.getElementById("create");
-var pop_up = document.getElementById("pop-up");
 
 menuIcon.addEventListener("click", function(){    
     dropDown.style.display = "block";
@@ -57,35 +55,11 @@ if(active.matches){
       }
 }
 
-create.addEventListener("click", function(){
-    pop_up.style.display = "block";
-})
 
 
-// const togglePassword = document.getElementById('togglePassword');
-// const password = document.getElementById('password');
- 
-// togglePassword.addEventListener('click', function (e) {
-//     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-//     password.setAttribute('type', type);
-//     this.classList.toggle('fa-eye-slash');        
 
-// });
-
-// const togglePassword = document.querySelector("#togglePassword");
-// const password = document.querySelector("#password");
-
-
-// togglePassword.addEventListener('click', function () {
-//     // toggle the type attribute
-//     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
-//     password.setAttribute('type', type);
-//     // toggle the eye / eye slash icon
-//     this.classList.toggle('fa-eye');
-// });
-
-const togglePassword = document.getElementById('togglePassword');
-const password = document.getElementById('password');
+const togglePassword = document.querySelector('#togglePassword');
+const password = document.querySelector('#id_password');
  
 togglePassword.addEventListener('click', function (e) {
     // toggle the type attribute
@@ -95,6 +69,20 @@ togglePassword.addEventListener('click', function (e) {
     this.classList.toggle('fa-eye-slash');
 });
 
+const togglePassword2 = document.querySelector('#togglePassword2');
+const password2 = document.querySelector('#id_password2');
+ 
+togglePassword2.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password2.getAttribute('type') === 'password' ? 'text' : 'password';
+    password2.setAttribute('type', type);
+    // toggle the eye slash icon
+    this.classList.toggle('fa-eye-slash');
+});
+
+
+
+
 
 const box_one = document.getElementById("hide");
 const box_two = document.getElementById("show");
@@ -102,13 +90,6 @@ let next = document.getElementsById("buttonX");
 const back = document.getElementsById("back");
 
 
-// let input = document.getElementsByClassName("inputTag");
-// let imageName = document.getElementsByClassName("imageName");
-
-//     input.addEventListener("change", ()=>{
-//         let inputImage = document.querySelectorAll("input[type=file]").files[0];
-//         imageName.innerText = inputImage.name;
-//     })
 
 
 document.querySelectorAll(".image-container img").forEach(image => {
