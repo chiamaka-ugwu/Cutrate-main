@@ -56,8 +56,6 @@ if(active.matches){
 }
 
 
-
-
 const togglePassword = document.querySelector('#togglePassword');
 const password = document.querySelector('#id_password');
  
