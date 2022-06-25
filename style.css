@@ -1368,6 +1368,9 @@ ul i{
         z-index: 1000;
         background-color: rgba(0, 0, 0, 0.3);
     }
+    /* .hero .text{
+        background-color: #66369D;
+    } */
     .hero .text h2{
         font-size: 2rem;
         margin-bottom: 1rem;
@@ -1386,6 +1389,7 @@ ul i{
     }
     .hero .text a{
         font-size: 1.1rem;
+        padding: 10px 50px;
     }
 
 
@@ -1414,7 +1418,9 @@ ul i{
         margin: auto;
         margin-top: 2rem;
     }
-
+    .carousel img{
+        height: 70vh;
+    }
 
     /* RECOMMENDED MOBILE */
     .recommended{
