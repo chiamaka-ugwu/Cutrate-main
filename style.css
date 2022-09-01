@@ -219,18 +219,23 @@ article .box p{
 
 
 /* CAROUSEL DESKTOP */
-.carousel{
+/* .carousel{
     margin-top: 3rem;
+    width: 30%;
+
 }
 .carousel img{
-    height: 100vh;
-}
+    width: 20%;
+} */
 
+.advert-banner{
+    margin-top: 5rem;
+}
 
 
 /* RECOMMENDED DESKTOP */
 .recommended{
-    margin: 7rem 0 4rem 0;
+    margin: 5rem 0 4rem 0;
 }
 .recommended article{
     display: flex;
@@ -1514,7 +1519,7 @@ ul i{
     /* ABOUT MOBILE */
     .about-us{
         flex-flow: column-reverse wrap;
-        margin-top: 5.45rem;
+        margin-top: 6rem;
     }
     .about-us .left{
         width: 100%;
