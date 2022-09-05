@@ -810,13 +810,16 @@ footer .credits p{
 }
 .create-account .box form .password{
     width: 100%;
+    position: relative;
 }
 .create-account .box form .password input{
     width: 98%;
 }
 .create-account .box form i{
-    margin-left: -2rem;
     color: #BF9553;
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
 }
 .create-account .box form input.buttonX, #submit{
     margin-top: 1rem;
@@ -847,6 +850,20 @@ footer .credits p{
 .log-in{
     height: 95vh;
 }
+#eye, #eye-slash{
+    color: #BF9553;
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+}
+#eye-slash{
+    display: none;
+}
+#eye-slash2{
+    display: none;
+}
+
+
 
 
 /* PAYMENT DESKTOP */
@@ -1088,10 +1105,10 @@ ul i{
     flex-flow: column wrap;
     align-items: center;
 }
-.label-file .imageName{
+.label-file .file-name{
     color: #66369D;
     font-style: italic;
-    
+    position: absolute;
 }
 .modal-form section{
     display: flex;
@@ -1430,6 +1447,8 @@ ul i{
     /* RECOMMENDED MOBILE */
     .recommended{
         width: 100%;
+        margin-top: 5.5rem;
+        padding-top: 0.1rem;
     }
     .recommended article{
         flex-flow: column wrap;
@@ -1519,7 +1538,8 @@ ul i{
     /* ABOUT MOBILE */
     .about-us{
         flex-flow: column-reverse wrap;
-        margin-top: 6rem;
+        margin-top: 5.5rem;
+        padding-top: 0.5rem;
     }
     .about-us .left{
         width: 100%;
