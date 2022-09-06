@@ -61,13 +61,70 @@
                         </ul>
                     </a>
                 </li>
-                <li><a href="./book-now.html"><i class="fa-solid fa-magnifying-glass"
-                    style="color: #BD93ECCC;"></i></a>
+                <li>
+                    <a class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle" role="button" 
+                        id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+                            Affiliate
+                        </a>
+                      
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                            <li><a class="dropdown-item" href="./affiliate-dashboard.html">
+                                Sign in</a>
+                            </li>
+                            <li><a class="dropdown-item" data-bs-toggle="modal" data-bs-target="#exampleModalNav" >
+                                Sign up</a>
+                            </li>
+                        </ul>
+                    </a>
                 </li>
                 <li><a href="./book-now.html" class="book">Book Now</a></li>
             </div>
         </ul>
     </nav>
+
+
+    <!-- AFFILIATE MODAL -->
+    <div class="modal fade aff-modal" id="exampleModalNav" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 style="color: #66369D" class="modal-title" id="exampleModalLabel">Become an Affiliate</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+               <form class="affiliate-form">
+                    <input type="text" name="fullname" placeholder="Full Name">
+                    <select name="gender" id="gender">
+                        <option value="">Gender</option>
+                        <option value="M">Male</option>
+                        <option value="F">Female</option>
+                    </select>
+                    <select name="age-range" id="age-range">
+                        <option value="">Age range</option>
+                        <option value="16-25">16-25</option>
+                        <option value="26-35">26-35</option>
+                        <option value="36-45">36-45</option>
+                        <option value="46-55">46-55</option>
+                    </select>
+                    <input type="text" name="phone" placeholder="Phone Number">
+                    <input type="email" name="email" placeholder="Email Address">
+                    <select name="location" id="location">
+                        <option value="location">Location</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="other">Other</option>
+
+                    </select>
+               </form>
+            </div>
+            <div class="modal-footer" style="display: flex; justify-content: center;">
+                <button name="submit" type="submit" class="affiliate-submit">Submit</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    
 
 
 
