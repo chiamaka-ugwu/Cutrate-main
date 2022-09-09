@@ -144,10 +144,14 @@ nav i:hover{
 }
 .affiliate-form input, select{
     padding: 10px;
-    border: 1px solid gray;
+    border: 1px solid #66369D;
     outline: none;
     margin-bottom: 1rem;
     border-radius: 10px;
+}
+.affiliate-form select{
+    background-color: white;
+    color: gray;
 }
 .affiliate-submit{
     padding: 10px 40px;
@@ -1321,6 +1325,40 @@ ul i{
     margin-bottom: 0.5rem;
 }
 
+/* AFFILIATE DASHBOARD */
+.affiliate-dashboard{
+    width: 80%;
+    margin: auto;
+    /* background-color: red; */
+}  
+.affiliate-dashboard h4{
+    color: #66369D;
+    font-size: 0.9rem;
+}
+.stats i, .stats2 i{
+    font-size: 30px;
+    color: #BF9553;
+    margin-bottom: 1rem;
+} 
+.stats, .stats2{
+    display: flex;
+}
+.stats2{
+    justify-content: center;
+}
+.stat-box, .stat-box2{
+    width: 40%;
+    margin: 1.5rem;
+    background-color: #66369d1c;
+    border-radius: 10px;
+    border: 1px solid #BF9553;
+    padding: 20px;
+    text-align: center;
+}
+.stats2 button{
+    margin-top: 2rem;
+    border: none;
+}
 
 
 
@@ -1663,7 +1701,7 @@ ul i{
         width: 90%;
     }
     .aff-modal{
-        margin-top: 2rem;
+        margin-top: 3rem;
     }
 
 
@@ -1980,7 +2018,18 @@ ul i{
     }
 
 
-
+    /* AFFILIATE MOBILE */
+    .aff-header{
+        margin-top: 5rem;
+    }
+    .stats, .stats2{
+        flex-direction: column;
+    }
+    
+    .stat-box, .stat-box2{
+        width: 100%;
+        margin: 1.5rem 0;
+    }
 
 
 
