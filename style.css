@@ -896,7 +896,7 @@ footer .credits p{
 
 /* PAYMENT DESKTOP */
 .payment{
-    margin-top: 3rem;
+    margin-top: 5rem;
     height: auto;
 }
 .payment h1{
@@ -1731,7 +1731,7 @@ ul i{
     .hotels .box .content{
         width: 85%;
         margin-top: 1rem;
-    }
+    }ip
 
 
     /* LOCATION MOBILE */
@@ -1743,9 +1743,9 @@ ul i{
         margin-top: 5rem;
     }
 
-    /* DESCRIPTION DESKTOP */
+    /* DESCRIPTION MOBILE */
     .desc{
-        margin-top: 6rem;
+        margin-top: 5.5rem;
     }
     .desc .box{
         width: 100%;
@@ -1803,10 +1803,12 @@ ul i{
     .payment{
         background-color: #fff;
         flex-flow: column-reverse wrap;
+        margin-top: 5.5rem;
     }
     .payment .right{
         width: 100%;
         text-align: center;
+        margin-top: -2rem;
     }
     .payment #details{
         width: 100%;
@@ -1927,7 +1929,8 @@ ul i{
 
     /* CUSTOMER INVOICE MOBILE */
     .customer-invoice{
-        margin-top: 9rem;
+        margin-top: 5.5rem;
+        padding-top: 3rem;
     }
     .customer-invoice article{
         width: 100%;
